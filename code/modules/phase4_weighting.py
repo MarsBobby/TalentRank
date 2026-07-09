@@ -280,11 +280,11 @@ def print_weight_report(weights: Dict[str, float], function: str):
 # ─────────────────────────────────────────────────────────────
 # AHP 可视化（论文级展示）
 # ─────────────────────────────────────────────────────────────
-
+"""
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-"""
+
 def build_ahp_matrix_from_weights(weights: Dict[str, float]) -> Tuple[np.ndarray, List[str]]:
     
     # 根据 AHP 权重反推判断矩阵（用于可视化）
