@@ -6,8 +6,8 @@ Phase 0 → Phase 8 完整流水线
 
 用法（在项目根目录运行）:
   python main.py --function 品牌
-  python main.py --function 生产 --data_dir D:/project_TalentSystem/data/manufacturing
-  python main.py --function hr   --data_dir D:/project_TalentSystem/data/hr
+  python main.py --function 生产 --data_dir BASE\_DIR/data/manufacturing
+  python main.py --function hr   --data_dir BASE\_DIR/data/hr
 
 修复记录（v2.2）：
   P1 - _quality_audit：generate_quality_report 补传 function 参数，
