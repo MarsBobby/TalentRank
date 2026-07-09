@@ -680,3 +680,11 @@ async def get_current_weights(function: str):
         return {"weights": {}, "message": "该职能尚无反馈数据"}
     weights = _bandit.get_current_weights(function, FEATURE_ORDER)
     return {"function": function, "weights": weights}
+
+@app.get("/health")
+async def health\_root():
+    return {"status": "ok", "time": datetime.now().isoformat()}
+
+@app.get("/api/health")
+async def health\_api():
+    return {"status": "ok", "time": datetime.now().isoformat()}
